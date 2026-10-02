@@ -1,0 +1,94 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--    screen title-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tenant Management!"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="blue"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenant Name"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/EditTenantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tenant Name"
+            android:minHeight="48dp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenant Phone"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/EditPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tenant Phone"
+            android:minHeight="48dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+    <!--    Rent and Action-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <EditText
+            android:id="@+id/EditRent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:hint="Enter Rent Piad"
+            android:padding="12dp"/>
+        <Button
+            android:id="@+id/ButtonSaveDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save details"
+            android:padding="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TextViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is where the details will appear"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
