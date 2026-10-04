@@ -1,9 +1,11 @@
 package com.example.mymobileapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+
+
 import com.example.mymobileapp.databinding.ActivityMainBinding
 
-private val databinding: Any
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
