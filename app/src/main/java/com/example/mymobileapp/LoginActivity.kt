@@ -25,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
             }
             val intent = Intent(this, MainActivity::class.java)
             //pass email to main activity
+            intent.putExtra("EMAIL", email)
             intent.putExtra("LOGGED_IN_EMAIL", email)
             startActivity(intent)
             finish()
